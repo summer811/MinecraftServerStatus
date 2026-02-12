@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>服务器状态</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="header">
+        <img id="server-icon" src="" alt="icon">
+        <div>
+            <div class="server-name">服务器名称</div>
+            <div id="status-indicator" class="status offline">离线</div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div>👥 玩家: <span id="players">0/0</span></div>
+        <div>📡 延迟: <span id="ping">0</span> ms</div>
+        <div>📦 版本: <span id="version">-</span></div>
+    </div>
+
+    <div id="motd" class="motd"></div>
+
+    <div class="player-section">
+        <div class="player-title">在线玩家</div>
+        <div id="player-list" class="player-list"></div>
+    </div>
+
+</div>
+
+<script>
+/*
+  如果当前页面不是在 iframe 中，
+  就启用完整背景模式
+*/
+if (window.self === window.top) {
+    document.body.classList.add("full");
+}
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
