@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mcping": "^1.1.5",
+    "mcping-js": "^1.5.0",
+    "minecraft-server-util": "^5.4.4"
+  }
+}
